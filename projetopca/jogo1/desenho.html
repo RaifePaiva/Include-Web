@@ -110,9 +110,36 @@
 	<div id="main-content">
 
 	<div class="container">	
+			<!--<form action='image/upload' method='post' encType="multipart/form-data">-->
+        
+				<!-- novo elemento! -->
+				<!--<input class="file-button" type="button" value="Choose your beautiful image">-->
+		
+				<!-- invisível -->
+		
+				<!--<input class="file-chooser" type="file" accept="image/*" hidden>
+				<img class="preview-img">-->
+				
+			</form>
+			<script>
+				//const $ = document.querySelector.bind(document);
+		
+				//const previewImg = $('.preview-img');
+				//const fileChooser = $('.file-chooser');
+				//const fileButton = $('.file-button');
+		
+				//fileButton.onclick = () => fileChooser.click();
+		
+				//fileChooser.onchange = e => {
+					//const fileToUpload = e.target.files.item(0);
+					//const reader = new FileReader();
+					//reader.onload = e => previewImg.src = e.target.result;
+					//reader.readAsDataURL(fileToUpload);
+				//};
+			</script>
 
 		<center>
-			<canvas id="canvas" class="canvas" width="600" height="650"
+			<canvas id="canvas" class="canvas" width="560" height="630"
 			style="border: 5px solid black;">
 			</canvas>
 		</center>
@@ -123,7 +150,8 @@
                 <input class="btn btn-danger" type="button" value="Imprimir Página" onClick="window.print()"/>
             </form>
 		</div>
-		
+
+
 		<h2>Tutorial</h2>
         <!-- Trigger the modal with a button -->
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Tutorial</button>

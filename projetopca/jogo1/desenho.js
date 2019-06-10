@@ -1,3 +1,7 @@
+/* escolher imagem */ 
+
+
+
 /* canvas desenho */
 var Draw = {
     obj : document.getElementById('canvas'),

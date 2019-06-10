@@ -134,6 +134,7 @@
                     document.getElementById("n2").innerHTML = x2;
                 }
                 Resources 
+
 				/* multi */
 				function verificar2 () {
 					var num1 = document.getElementById("num1").innerHTML;
@@ -157,6 +158,54 @@
 					document.getElementById("num2").innerHTML = x2;
 				}
 				Resources 
+
+				/* soma */
+				function verificar3() {
+					var nu1 = Number.parseInt(document.getElementById("nu1").innerHTML);
+					var nu2 = Number.parseInt(document.getElementById("nu2").innerHTML);
+					var resu = document.getElementById("nu3").value;
+					
+					if (nu1 + nu2 == resu) {
+					alert("Parabéns, você ACERTOU!");
+					} else {
+					alert("Você errou, tente de novo!")
+					}
+					resetar3();
+				}
+
+
+				function resetar3() {
+					var x1 = Math.floor(Math.random()*10);
+					var x2 = Math.floor(Math.random()*10);
+					document.getElementById("nu3").value = "";
+					document.getElementById("nu1").innerHTML = x1;
+					document.getElementById("nu2").innerHTML = x2;
+				}
+				Resources 
+
+				/* divisão */
+				function verificar4 () {
+					var numer1 = document.getElementById("numer1").innerHTML;
+					var numer2 = document.getElementById("numer2").innerHTML;
+					var resul = document.getElementById("numer3").value;
+					
+					if (numer1 / numer2 == resul) {
+					alert("Parabéns, você ACERTOU!");
+					} else {
+					alert("Você errou, tente de novo!")
+					}
+					resetar4();
+				}
+
+
+				function resetar4() {
+					var x1 = Math.floor(Math.random()*10);
+					var x2 = Math.floor(Math.random()*10);
+					document.getElementById("numer3").value = "";
+					document.getElementById("numer1").innerHTML = x1;
+					document.getElementById("numer2").innerHTML = x2;
+				}
+				Resources 
 				
                 /* matematica */
         
@@ -168,9 +217,16 @@
 			<!-- colapse -->
 
 			<p>
-				<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Subtração</a>
-				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Multiplicação</button>
-				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Subtração e Multiplicação</button>
+				<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" 
+				aria-expanded="false" aria-controls="multiCollapseExample1">Subtração</a>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" 
+				aria-expanded="false" aria-controls="multiCollapseExample2">Multiplicação</button>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" 
+				aria-expanded="false" aria-controls="multiCollapseExample2">Soma</button>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" 
+				aria-expanded="false" aria-controls="multiCollapseExample2">Divisão</button>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" 
+				aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample3">Tudo</button>
 			</p>
 			<div class="row">
 			<div class="col">
@@ -200,6 +256,38 @@
 						<div id="igual">=</div>
 						<input id="num3"></input>
 						<button class="botao" onclick="verificar2()">Verificar</button>
+					</div>
+					<!-- calculo de matemnatica -->
+				</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="collapse multi-collapse" id="multiCollapseExample3">
+				<div class="card card-body">
+					<!-- calculo de matemnatica -->
+					<div class="mat">
+						<div id="nu1"></div>
+						<div id="x">+</div>
+						<div id="nu2"></div>
+						<div id="igual">=</div>
+						<input id="nu3"></input>
+						<button class="botao" onclick="verificar3()">Verificar</button>
+					</div>
+					<!-- calculo de matemnatica -->
+				</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="collapse multi-collapse" id="multiCollapseExample4">
+				<div class="card card-body">
+					<!-- calculo de matemnatica -->
+					<div class="mat">
+						<div id="numer1"></div>
+						<div id="x">/</div>
+						<div id="numer2"></div>
+						<div id="igual">=</div>
+						<input id="numer3"></input>
+						<button class="botao" onclick="verificar4()">Verificar</button>
 					</div>
 					<!-- calculo de matemnatica -->
 				</div>

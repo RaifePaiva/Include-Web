@@ -150,7 +150,7 @@ div#home {
 /* - ---------------------- -- ---*/
 
 /* jogo1 */
-  canvas{
+  .canvas{
     background-image: url("../img/contorno1.png");
   }
   

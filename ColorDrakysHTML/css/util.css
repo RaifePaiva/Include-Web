@@ -1,0 +1,39 @@
+/* FONT-FAMILY */
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,400,500600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Sintony:200,300,400,500600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400,500600,700,800);
+.font-nunito  { font-family: 'Nunito', sans-serif; }
+.font-sintony  { font-family: 'Sintony', sans-serif; }
+.font-raleway { font-family: 'Raleway', sans-serif; }
+.weight-200 { font-weight: 200; }
+.weight-300 { font-weight: 300; }
+.weight-400 { font-weight: 400; }
+.weight-500 { font-weight: 500; }
+.weight-600 { font-weight: 600; }
+.weight-700 { font-weight: 700; }
+.weight-800 { font-weight: 800; }
+
+
+/* FONT-SIZE */
+.fs-20 { font-size: 20px!important; }
+.fs-25 { font-size: 25px!important; }
+
+/* POSITIOn */
+.position-fixed { position: fixed; }
+.right-0 { right: 0; }
+
+
+
+/* SQUARE */
+.square-50 { width: 50px; height: 50px; }
+
+
+.flex-center { display: flex; align-items: center; justify-content: center; }
+
+
+/* HOVER */
+.hover-d-none:hover { text-decoration: none; }
+
+
+/* COLOR */
+.color-555 { color: #555; }

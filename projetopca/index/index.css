@@ -1,0 +1,32 @@
+
+.atividades{
+  margin-top: 6%;
+}
+
+.jumbotron h1{
+  font-family: 'Wendy One', sans-serif;
+}
+
+.jumbotron{
+  width: 900px;
+  height:340px;
+}
+
+.container{
+  background-image: url("../img/fundo 2.jpg");
+}
+
+.Paragrafotexto{
+    font-family: 'Walter Turncoat', cursive;
+    font-size:1.5em;
+}
+
+.display-4{
+   background: linear-gradient(to right, green 50%, blue 0);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+  font-weight: 900;
+  font-family: Arial;
+}
+

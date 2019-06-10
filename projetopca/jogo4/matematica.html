@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Matemática</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Corpo Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="mat.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link href="../css/font-awesome.min.css" rel="stylesheet">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;subset=latin-ext,thai,vietnamese"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Courgette&amp;subset=latin-ext" rel="stylesheet">
+	<!-- //Web-Fonts -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- main -->
+	<div class="d-flex">
+		<!-- header -->
+		<header>
+			<nav class="nav-top">
+				<!-- Created By Bogdan Nagorniy -->
+				<div class="logo">
+					<h1>
+						<a href="index.html">BTT</a>
+					</h1>
+				</div>
+				<ul class="nav_links list-unstyled">
+					<li class="nav-link-list">
+						<a href="../index/index.html">
+							<span class="fa fa-home"></span>
+							<p>Home</p>
+						</a>
+					</li>
+					<li>
+						<a href="../jogo1/desenho.html">
+							<span class="fa fa-paint-brush"></span>
+							<p>Desenho</p>
+						</a>
+					</li>
+					<li>
+						<a href="../jogo2/cobrinha.html">
+							<span class="fa fa-gamepad"></span>
+							<p>Cobrinha</p>
+						</a>
+					</li>
+					<li>
+						<a href="../jogo3/completarpalavras.html">
+							<span class="fa fa-book"></span>
+							<p>Palavras</p>
+						</a>
+					</li>
+					<li>
+						<a href="matematica.html">
+							<span class="fa fa-calculator"></span>
+							<p>Matemática</p>
+						</a>
+					</li>
+					<li>
+						<a href="../jogo5/interpretacao.html">
+							<span class="fa fa-comment"></span>
+							<p>Interpretação</p>
+						</a>
+					</li>
+					<li>
+						<a href="../jogo6/memoria.html">
+							<span class="fa fa-question"></span>
+							<p>Memória</p>
+						</a>
+					</li>
+					<li>
+						<a href="../jogo7/historinha.html">
+							<span class="fa fa-film"></span>
+							<p>Historinha</p>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- //header -->
+
+		<!-- left content -->
+		<div id="main-content">
+
+			<script>
+
+                /* matematica */
+                function verificar () {
+                  var numero1 = document.getElementById("n1").innerHTML;
+                  var numero2 = document.getElementById("n2").innerHTML;
+                  var resultado = document.getElementById("n3").value;
+                  
+                  if (numero1-numero2 == resultado) {
+                  alert("Parabéns, você ACERTOU!");
+                  } else {
+                  alert("Você errou, tente de novo!")
+                  }
+                  resetar();
+                }
+                
+                
+                function resetar() {
+                    var x1 = Math.floor(Math.random()*10);
+                    var x2 = Math.floor(Math.random()*10);
+                    document.getElementById("n3").value = "";
+                    document.getElementById("n1").innerHTML = x1;
+                    document.getElementById("n2").innerHTML = x2;
+                }
+                Resources 
+				/* multi */
+				function verificar2 () {
+					var num1 = document.getElementById("num1").innerHTML;
+					var num2 = document.getElementById("num2").innerHTML;
+					var result = document.getElementById("num3").value;
+					
+					if (num1 * num2 == result) {
+					alert("Parabéns, você ACERTOU!");
+					} else {
+					alert("Você errou, tente de novo!")
+					}
+					resetar2();
+				}
+
+
+				function resetar2() {
+					var x1 = Math.floor(Math.random()*8);
+					var x2 = Math.floor(Math.random()*8);
+					document.getElementById("num3").value = "";
+					document.getElementById("num1").innerHTML = x1;
+					document.getElementById("num2").innerHTML = x2;
+				}
+				Resources 
+				
+                /* matematica */
+        
+              </script>
+				
+            
+			<br>
+
+			<!-- colapse -->
+
+			<p>
+				<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Subtração</a>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Multiplicação</button>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Subtração e Multiplicação</button>
+			</p>
+			<div class="row">
+			<div class="col">
+				<div class="collapse multi-collapse" id="multiCollapseExample1">
+				<div class="card card-body">
+					<!-- calculo de matemnatica -->
+					<div class="mat">
+						<div id="n1"></div>
+						<div id="x">-</div>
+						<div id="n2"></div>
+						<div id="igual">=</div>
+						<input id="n3"></input>
+						<button class="botao" onclick="verificar()">Verificar</button>
+					</div>
+					<!-- calculo de matemnatica -->
+				</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="collapse multi-collapse" id="multiCollapseExample2">
+				<div class="card card-body">
+					<!-- calculo de matemnatica -->
+					<div class="mat">
+						<div id="num1"></div>
+						<div id="x">x</div>
+						<div id="num2"></div>
+						<div id="igual">=</div>
+						<input id="num3"></input>
+						<button class="botao" onclick="verificar2()">Verificar</button>
+					</div>
+					<!-- calculo de matemnatica -->
+				</div>
+				</div>
+			</div>
+			</div>
+		
+			<!-- colapse -->
+							
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+	
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">						
+							<h4 class="modal-title">Olá, aqui vai o tutorial!!</h4>
+							
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<p>
+									Para iniciar o jogo você deve apertar o botão escrito verificar e após isso vai surgir um aviso
+									aperte em “OK” e irá aparecer 2 números e você deverá botar o resultado a multiplicação dos
+									números.
+									<br>
+									Vamos nessa!!
+							</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+						</div>
+					</div>
+	
+				</div>
+			</div>
+	
+			<script type="text/javascript">
+				$('#myModal').modal('show')
+			</script>
+
+		</div>
+		<!-- //left content -->	
+	
+	</div>
+	<!-- //main -->
+
+</body>
+
+</html>

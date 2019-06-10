@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Educação inclusiva</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+        <!-- Arquivo css -->
+        <link rel="stylesheet" href="estilo.css">
+
+        <!-- Arquivo Javascript -->
+        <script src="app.js"></script>
+
+        <script>
+            function introduzPergunta9(){
+                responsiveVoice.speak("Ele cortou 10 laranjas ao meio. Depois pegou metade de tudo que obteve e cortou ao meio. Quantas partes ele obteve ao final do processo?", "Brazilian Portuguese Female");
+                responsiveVoice.speak("Primeira Opção, 40","Brazilian Portuguese Female");
+                responsiveVoice.speak("Segunda Opção, 30","Brazilian Portuguese Female");
+            }
+            window.addEventListener('load', introduzPergunta9);
+
+        </script>
+
+        <style>
+            .brand-logo {
+            position: absolute;
+            bottom: 0px;
+        }
+        </style>
+       
+
+    </head>
+    <body>
+
+        <img src="background/Logo-projeto.png" class="brand-logo" width="700px">
+        
+        <script>
+
+            function verificaTecla(){
+                document.addEventListener('keydown', teclaKD);
+            }
+
+            function repetirPergunta9(){
+                responsiveVoice.speak("Ele cortou 10 laranjas ao meio. Depois pegou metade de tudo que obteve e cortou ao meio. Quantas partes ele obteve ao final do processo?", "Brazilian Portuguese Female");
+                responsiveVoice.speak("Primeira Opção, 40","Brazilian Portuguese Female");
+                responsiveVoice.speak("Segunda Opção, 30","Brazilian Portuguese Female");
+            }
+
+            function teclaKD (){
+                //tecla f = 70 / tecla j = 74 / tecla g = 71
+                var tecla = window.event.keyCode;
+                if(tecla == 70){
+                    responsiveVoice.speak('Não foi dessa vez, mas vamos para próxima pergunta.', "Brazilian Portuguese Female");
+                    window.location.href = 'pergunta10.html';
+                }else if (tecla == 74){
+                    responsiveVoice.speak('Parabéns, você acertou, vamos para próxima', "Brazilian Portuguese Female");
+                    window.location.href = 'pergunta10.html';
+                }else if(tecla == 71){
+                    responsiveVoice.speak('Não entendeu? Eu repito para você', "Brazilian Portuguese Female");
+                    repetirPergunta9();
+                    verificaTecla();
+                }
+            }
+
+            function criaDivPergunta2 () { 
+                //criando o elemento HTML
+                var divTexto = document.createElement('img');
+                divTexto.src = 'questao9/pergunta9.png';
+                divTexto.style.width = '400px';
+                divTexto.style.height = '310px';
+                divTexto.style.top = '120px';
+                divTexto.style.left = '460px';
+                divTexto.style.position = 'absolute';
+                document.body.appendChild(divTexto);
+
+                //Criando os elementos de resposta
+                var divResposta = document.createElement('img');
+                divResposta.src = 'questao9/OpcaoA.png';
+                divResposta.style.top = '500px';
+                divResposta.style.left = '460px';
+                divResposta.style.position = 'absolute';
+                document.body.appendChild(divResposta); 
+                
+                var divResposta2 = document.createElement('img');
+                divResposta2.src = 'questao9/OpcaoB.png';
+                divResposta2.style.top = '500px';
+                divResposta2.style.left = '670px';
+                divResposta2.style.position = 'absolute';
+                document.body.appendChild(divResposta2); 
+                verificaTecla();
+            }
+            
+            var porraChataPraCaralho = setInterval(function(){
+                criaDivPergunta2();
+            }, 1000);
+
+        </script>
+        
+    
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="estilo.css"/>
+
+        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+		<meta charset="utf-8">
+		
+		<script src="app2.js"></script>
+
+		<script>
+			window.addEventListener('load', introduzPortal);
+			
+			
+		</script>
+	
+	</head>
+	<body>
+
+        <!-- Inicio cabecalho -->
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light navbar-transparente fixed-top">
+            <div class="container">
+    
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <i class="fas fa-bars"></i>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+						<a href="login.html" class="btn btn-outline-light">Login</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </header>
+        <!-- Fim cabecalho -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<img src="imagens/Logo-projeto2.png" width="500px;" height="500px;"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<div class="mb-2">
+							<button type="button" class="btn btn-light btn-lg" onclick="iniciarJogo1();">Iniciante</button>
+							<button type="button" class="btn btn-light btn-lg" onclick="iniciarJogo2();">Intermediário</button>
+							<button type="button" class="btn btn-light btn-lg" onclick="iniciarJogo3();">Avançado</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<!-- <button type="button" class="btn btn-info btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

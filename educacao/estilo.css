@@ -1,0 +1,36 @@
+body{
+    background-image: url('background/Background3.png');
+    background-repeat: no-repeat;
+}
+
+.brand-logo {
+    position: absolute;
+    bottom: 0px;
+}
+
+/* Barra de navegacao */
+nav.navbar-transparente {
+    background: rgba(0, 0, 0, 0);
+    padding: 15px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+ color: white;
+ text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+ color: rgb(0, 0, 0);
+ background: white;
+ border-radius: 5px;
+ text-decoration: none;
+}
+
+.navbar-light .navbar-toggler {
+ color: white;
+ border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* ---------------------------- */
